@@ -1,0 +1,90 @@
+.card {
+  display: block;
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  background-color: #eee;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform var(--transition-slow);
+}
+
+.card:hover .imageWrapper {
+  transform: scale(1.05);
+}
+
+.image {
+  object-fit: cover;
+  transition: filter var(--transition-base);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2.5rem;
+  opacity: 0.9;
+  transition: opacity var(--transition-base);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.content {
+  color: white;
+  transform: translateY(20px);
+  transition: transform var(--transition-base);
+}
+
+.card:hover .content {
+  transform: translateY(0);
+}
+
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: var(--color-brand-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.card:hover .button {
+  opacity: 1;
+}

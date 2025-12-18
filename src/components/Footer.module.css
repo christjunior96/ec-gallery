@@ -1,0 +1,52 @@
+.footer {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  padding: 6rem 0;
+  margin-top: auto;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.footerBrand h3 {
+  color: var(--color-brand-secondary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footerBrand p {
+  opacity: 0.6;
+}
+
+.footerImpressum h4 {
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.footerImpressum p {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.footerContact {
+  margin-top: 1.5rem;
+}
+
+.footerContact a {
+  color: var(--color-brand-secondary);
+}
+
+.footerContact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

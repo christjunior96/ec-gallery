@@ -1,0 +1,20 @@
+:root {
+  /* Colors inspired by oil painting theme - warm, organic, and elegant */
+  --color-brand-primary: #8C6239; /* Rich Burnt Umber */
+  --color-brand-secondary: #D9B382; /* Warm Ochre */
+  --color-brand-accent: #5D737E; /* Soft Payne's Gray / Sky Blue */
+  
+  --color-bg-light: #F9F7F2; /* Canvas / Linen White */
+  --color-bg-card: #FFFFFF;
+  
+  --color-text-main: #2C2C2C;
+  --color-text-muted: #666666;
+  
+  /* Typography */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  /* Shadows */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
