@@ -116,7 +116,7 @@ export default function Home() {
               <span className={styles.sectionLabel}>Portfolio</span>
               <h2 className="serif">Entdecken Sie die Werke</h2>
               <p className={styles.sectionSubtitle}>
-                Tauchen Sie ein in die verschiedenen Facetten ihrer Kunst.
+                Tauchen Sie ein in die verschiedenen Facetten ihrer Malerei.
               </p>
             </div>
           </AnimatedSection>
