@@ -6,10 +6,18 @@
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  column-count: 3;
+  column-gap: 2rem;
   padding: 2rem 0;
+}
+
+.masonryItem {
+  break-inside: avoid;
+  -webkit-break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 2rem;
+  display: inline-block;
+  width: 100%;
 }
 
 .imageCard {
@@ -27,14 +35,13 @@
 
 .imageWrapper {
   position: relative;
-  aspect-ratio: 1;
   overflow: hidden;
 }
 
 .image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
   transition: transform var(--transition-slow);
 }
 
@@ -78,9 +85,14 @@
   margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery {
+    column-count: 1;
   }
 }

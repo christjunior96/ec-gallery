@@ -21,28 +21,29 @@ export default function GalleryClient({ images }: GalleryClientProps) {
         <>
             <div className={styles.gallery}>
                 {images.map((src, idx) => (
-                    <motion.div
-                        key={src}
-                        layoutId={`image-${idx}`}
-                        className={styles.imageCard}
-                        onClick={() => openLightbox(idx)}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: idx * 0.05 }}
-                        whileHover={{ y: -5 }}
-                    >
-                        <div className={styles.imageWrapper}>
-                            <img
-                                src={src}
-                                alt={`Image ${idx + 1}`}
-                                className={styles.image}
-                            />
-                            <div className={styles.overlayText}>
-                                <span>Vergrößern</span>
+                    <div key={src} className={styles.masonryItem}>
+                        <motion.div
+                            layoutId={`image-${idx}`}
+                            className={styles.imageCard}
+                            onClick={() => openLightbox(idx)}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: idx * 0.05 }}
+                            whileHover={{ y: -5 }}
+                        >
+                            <div className={styles.imageWrapper}>
+                                <img
+                                    src={src}
+                                    alt={`Image ${idx + 1}`}
+                                    className={styles.image}
+                                />
+                                <div className={styles.overlayText}>
+                                    <span>Vergrößern</span>
+                                </div>
                             </div>
-                        </div>
-                    </motion.div>
+                        </motion.div>
+                    </div>
                 ))}
             </div>
 
