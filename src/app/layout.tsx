@@ -21,6 +21,8 @@ export const viewport = {
   themeColor: "#5c4033",
 };
 
+import Navbar from "@/components/Navbar";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="de" suppressHydrationWarning>
       <body className={`${playfair.variable} ${inter.variable} antialiased`} suppressHydrationWarning>
+        <Navbar />
         {children}
       </body>
     </html>
