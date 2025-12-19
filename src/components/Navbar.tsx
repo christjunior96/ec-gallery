@@ -25,7 +25,10 @@ export default function Navbar() {
                             <span>Zurück</span>
                         </Link>
                     )}
-                    <Link href="/" className={`${styles.logo} serif`}>
+                    <Link
+                        href="/"
+                        className={`${styles.logo} serif ${!isHome ? styles.hideOnMobile : ""}`}
+                    >
                         EC Gallery
                     </Link>
                 </div>
