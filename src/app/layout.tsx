@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   description: "Entdecken Sie die beeindruckende Welt der Ölgemälde von Erika Christ. Landschaften, Stillleben und mehr.",
 };
 
+export const viewport = {
+  themeColor: "#5c4033",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
