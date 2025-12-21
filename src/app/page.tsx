@@ -97,7 +97,33 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.introImageWrapper}>
-              <div className={styles.imageFrame}>
+              <motion.div
+                className={styles.imageFrame}
+                initial={{
+                  opacity: 0,
+                  x: 100,
+                  rotate: 10,
+                  boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  rotate: 2,
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)"
+                }}
+                viewport={{ once: true, margin: "-100px" }}
+                whileHover={{
+                  scale: 1.05,
+                  rotate: 0,
+                  y: -15,
+                  boxShadow: "0 30px 60px rgba(92, 64, 51, 0.3)", // Matching --color-brand-primary
+                  transition: { duration: 0.4, ease: "easeOut" }
+                }}
+                transition={{
+                  duration: 1.2,
+                  ease: [0.21, 0.47, 0.32, 0.98]
+                }}
+              >
                 <Image
                   src="/erika.JPG"
                   alt="Erika Christ"
@@ -105,7 +131,7 @@ export default function Home() {
                   height={500}
                   className={styles.introImage}
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
         </AnimatedSection>

@@ -134,8 +134,6 @@
   position: relative;
   padding: 1.5rem;
   background-color: white;
-  box-shadow: var(--shadow-lg);
-  transform: rotate(2deg);
 }
 
 .introImage {
