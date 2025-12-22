@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import styles from "./page.module.css";
 
 const categories = [
-  { name: "Abstrakt", href: "/Abstrakt", image: "/Abstrakt/0773e547-3097-41ae-bc34-49e49fe60aa3.jpg" },
+  { name: "Surreale Kunst", href: "/Surreale Kunst", image: "/Surreale Kunst/0773e547-3097-41ae-bc34-49e49fe60aa3.jpg" },
   { name: "Menschen", href: "/Menschen", image: "/Menschen/IMG_0007-1.jpg" },
   { name: "Landschaften", href: "/Landschaften", image: "/Landschaften/5d3bae24-53b0-42cf-baa7-27421f91b5d2.jpg" },
   { name: "Autos", href: "/Autos", image: "/Autos/IMG_0012-1.jpg" },
