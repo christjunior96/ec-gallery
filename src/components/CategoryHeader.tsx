@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ChevronLeft } from "lucide-react";
 import styles from "./CategoryHeader.module.css";
 
 interface CategoryHeaderProps {
